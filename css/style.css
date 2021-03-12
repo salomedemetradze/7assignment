@@ -1,0 +1,66 @@
+.page1 {
+	background-image: url(../images/venice.jpg);
+	width: 100%;
+	height: 700px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.dolphin1 {
+	height: 300px;
+	/*position: absolute;*/
+	/*display: block;
+    margin-left: auto;
+    margin-right: auto;*/
+    /*width: 50%;*/
+    position: absolute;
+	bottom: 8px;
+  left: 400px;
+  animation: dolphinanimation 2s infinite;
+  animation-timing-function: linear;
+}
+.dolphin2 {
+	height: 300px;
+    position: absolute;
+    bottom: 8px;
+    right: 400px;
+    animation: animation 2s infinite;
+}  
+.girl {
+	position: absolute;
+	top: 50%;
+  left: 50%;
+  height: 300px;
+  animation: girlanimation 3s infinite;
+  transform: translate(-50%, -50%);
+  animation-timing-function: ease-out;
+}
+}
+/*.images {
+	position: absolute;
+}*/
+.clear {
+	clear: both;
+}
+/*.wraper {
+	position: absolute;
+}*/
+@keyframes dolphinanimation {
+	0% {transform: translateY(0px);}
+	25% {transform: translateY(-350px);}
+	50% {transform: translateX(100px);}
+	100% {transform: translateY(200px);}
+} 
+@keyframes animation {
+	0% {transform: translateY(0px);}
+	25% {transform: translateY(-350px);}
+	50% {transform: translateX(-100px);}
+	100% {transform: translateY(200px);}
+} 
+@keyframes girlanimation {
+	0% {transform: translateY(0px);}
+	25% {transform: translateY(-250px);}
+	50% {transform: translateY(-300px);}
+	75% {transform: translateY(250px);}
+	100% {transform: translateY(0px);}
+}
